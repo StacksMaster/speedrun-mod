@@ -1,5 +1,5 @@
 {
-	"id": "sr-timer",
+	"id": "stacks-sr-timer",
 	"name": "Speedrun Timer",
 	"version": "1.0.0",
 	"author": "StacksMaster",
@@ -19,6 +19,12 @@
 				[3, "On key pressed (P)"]
 			],
 			"default_value": 3
-		}
+		},
+		{
+			"id": "warning_label",
+			"type": "label",
+			"category": "Warning",
+			"text": "Please restart the game if you set the timer activation."
+		},
 	]
 }

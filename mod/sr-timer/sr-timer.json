@@ -1,0 +1,24 @@
+{
+	"id": "sr-timer",
+	"name": "Speedrun Timer",
+	"version": "1.0.0",
+	"author": "StacksMaster",
+	"description": "Basic mod to do speedruns",
+	"load_after": [],
+	"load_before": [],
+	"icon": "res://mod/sr-timer/assets/icon.png",
+	"settings": [
+		{
+			"id": "timer_activation",
+			"name": "Timer Activation Method",
+			"type": "combo_box",
+			"category": "Timer",
+			"values": [
+				[1, "On first input on elevator"],
+				[2, "On game loaded(when you launch the game)"],
+				[3, "On key pressed (P)"]
+			],
+			"default_value": 3
+		}
+	]
+}

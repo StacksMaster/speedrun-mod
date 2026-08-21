@@ -1,5 +1,5 @@
 {
-	"id": "stacks-sr-timer",
+	"id": "sr-timer",
 	"name": "Speedrun Timer",
 	"version": "1.0.0",
 	"author": "StacksMaster",
@@ -14,17 +14,29 @@
 			"type": "combo_box",
 			"category": "Timer",
 			"values": [
-				[1, "On first input on elevator"],
-				[2, "On game loaded(when you launch the game)"],
+				[1, "On first input"],
+				[2, "On game loaded"],
 				[3, "On key pressed (P)"]
 			],
-			"default_value": 3
+			"default_value": 1
 		},
 		{
-			"id": "warning_label",
+			"id": "w_label",
 			"type": "label",
-			"category": "Warning",
+			"category": "Info",
+			"text": "NONE OF THE OPTIONS WORK ON THIS VERSION, THE TIMER STARTS WHEN YOU SPAWN"
+		},
+		{
+			"id": "restart_label",
+			"type": "label",
+			"category": "Info",
 			"text": "Please restart the game if you set the timer activation."
+		},
+		{
+			"id": "info_label",
+			"type": "label",
+			"category": "Info",
+			"text": "On game load is when you start the game, on game started is when you are on the elevator"
 		},
 	]
 }

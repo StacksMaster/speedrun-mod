@@ -1,0 +1,85 @@
+[gd_scene format=3 uid="uid://c1tpwrr7uuss5"]
+
+[ext_resource type="FontFile" uid="uid://dx0i7ku62p6xa" path="res://mod/sr-timer/asset/Graph-35-pix.ttf" id="1_dwod8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sihb8"]
+bg_color = Color(0, 0, 0, 0.3529412)
+
+[node name="TimerRoot" type="Control" unique_id=75584834]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1921184679]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.7829861
+anchor_top = 0.40432099
+anchor_right = 1.0
+anchor_bottom = 0.595679
+offset_bottom = 3.0517578e-05
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_sihb8")
+metadata/_edit_use_anchors_ = true
+
+[node name="Root" type="VBoxContainer" parent="PanelContainer" unique_id=1138359166]
+layout_mode = 2
+
+[node name="Timers" type="VBoxContainer" parent="PanelContainer/Root" unique_id=470212395]
+layout_mode = 2
+
+[node name="Blank" type="Label" parent="PanelContainer/Root/Timers" unique_id=1534870882]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6784314, 0.44705883, 0.9019608, 1)
+theme_override_fonts/font = ExtResource("1_dwod8")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="IGT_Label2" type="Label" parent="PanelContainer/Root/Timers" unique_id=1970700551]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6784314, 0.44705883, 0.9019608, 1)
+theme_override_fonts/font = ExtResource("1_dwod8")
+text = "IGT"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="IGT" type="Label" parent="PanelContainer/Root/Timers" unique_id=193330507]
+custom_minimum_size = Vector2(250, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dwod8")
+theme_override_font_sizes/font_size = 32
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 3
+
+[node name="RTA_Label" type="Label" parent="PanelContainer/Root/Timers" unique_id=1480977898]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.49803922, 0.49803922, 1)
+theme_override_fonts/font = ExtResource("1_dwod8")
+text = "RTA"
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="RTA" type="Label" parent="PanelContainer/Root/Timers" unique_id=99024292]
+custom_minimum_size = Vector2(250, 40)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_dwod8")
+theme_override_font_sizes/font_size = 32
+text = "00:00:00"
+horizontal_alignment = 1
+vertical_alignment = 3
+
+[node name="Blank2" type="Label" parent="PanelContainer/Root/Timers" unique_id=1445648718]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6784314, 0.44705883, 0.9019608, 1)
+theme_override_fonts/font = ExtResource("1_dwod8")
+horizontal_alignment = 1
+vertical_alignment = 2
